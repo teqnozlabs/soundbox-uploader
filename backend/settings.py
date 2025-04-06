@@ -7,8 +7,10 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-v^sfe#(sv!hzbda3avel(98-^)5m$b@qxl3bx2_hh#jby7!k29'
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['soundbox-uploader.onrender.com',
+    'localhost',  # Allow local development
+    '127.0.0.1',]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
