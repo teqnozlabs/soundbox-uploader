@@ -70,6 +70,19 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
+# CORS Settings
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:55104',  # Development environment
+]
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'X-Admin-Key',  # Custom header
+    'x-csrf-token',
+]
+
+
+
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
