@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Django
+*.db
+.env
+*.pot
+*.pyc
+media/
+staticfiles/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Virtualenv
+venv/
+.env/
+
+# Render deployment cache (if any)
+*.render*
