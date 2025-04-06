@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: django-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        value: django-insecure-v^sfe#(sv!hzbda3avel(98-^)5m$b@qxl3bx2_hh#jby7!k29
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: .onrender.com
+      - key: AWS_ACCESS_KEY_ID
+        value: AKIAYEKP5ILMKGWICRVV
+      - key: AWS_SECRET_ACCESS_KEY
+        value: 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
+      - key: AWS_STORAGE_BUCKET_NAME
+        value: soundbox-audio
+      - key: AWS_S3_REGION_NAME
+        value: ap-south-1
+      - key: ADMIN_SECRET_KEY
+        value: Xg9$u72Lp@Vb#f1RxN^mZc!tA3KeYps4
